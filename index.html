@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4c16894797.js" crossorigin="anonymous"></script>
+    <title>My Weather App</title>
+    <link type="image/png" rel="icon" href="./icons8-day-and-night-48.png">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center px-3">
+            <div class="col-12 col-lg-8 col-md-10 d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-center">My Weather App.</h1>
+                <form action="#" id="form" class="form">
+                    <div class="input-group my-5">
+                        <div class="input-group-text p-0">
+                            <button type="submit" id="search-button" class="btn btn-dark rounded-0 rounded-start"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <input id="search" type="text" class="form-control text-center"
+                            placeholder="Enter Location Here...">
+                    </div>
+                </form>
+                <div id="weatherCard" class="card shadow-lg border border-dark border-2 bg-light rounded-3 py-3">
+                    <div class="card-body p-1">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p id="locationName" class="fw-bold fs-1"></p>
+                            <p id="cityDate" class="fs-2"></p>
+                        </div>
+                        <div id="tempInfo" class="d-flex align-items-center justify-content-around">
+                            <span><img id="weatherIcon" class="pe-2"></span>
+                            <h2 id="temp" class="pe-4"></h2>
+                            <div class="pe-5">
+                                <p id="cityTime" class="fs-4"></p>
+                                <p id="cityDay" class="fs-1 fw-bold mb-3" style="font-size: 4rem;"></p>
+                                <p id="weatherCondition" class="fs-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
